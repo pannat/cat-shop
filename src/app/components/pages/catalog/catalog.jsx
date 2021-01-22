@@ -23,15 +23,20 @@ export default class Catalog extends React.Component {
 
     let cards;
     if (this.state.loaded) {
-      cards = this.state.list.map((item, i) => <Card key={i.toString()} item={item}></Card>);
+      cards = this.state.list.map((item, i) => <Card key={i.toString()} item={item}/>);
     }
 
     return (
-      <section>
-        <h2>Ты сегодня покормил кота?</h2>
-        <ul>
-          {cards}
-        </ul>
+      <section className="catalog">
+        <h1 className="visually-hidden">Каталог еды для кошек</h1>
+        <div className="container">
+          <div className="catalog__inner">
+            <p className="catalog__text">Ты сегодня покормил кота?</p>
+            <ul className="catalog__list">
+              {cards}
+            </ul>
+          </div>
+        </div>
       </section>
     )
   }

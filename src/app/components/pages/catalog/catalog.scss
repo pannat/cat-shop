@@ -1,0 +1,29 @@
+.catalog {
+  margin: auto;
+}
+
+.catalog__text {
+   margin: 0 0 24px;
+   font-family: "Exo2.0", "Trebuchet MS", serif;
+   font-size: 36px;
+   line-height: 44px;
+   font-weight: 300;
+   text-align: center;
+   color: #FFF;
+   text-shadow: 0 1px 1px #000000;
+ }
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.catalog__inner {
+  padding: 10vh 0;
+}

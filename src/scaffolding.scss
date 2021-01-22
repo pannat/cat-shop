@@ -1,0 +1,53 @@
+$tablet-width: 680px;
+$desktop-width: 980px;
+
+@font-face {
+  font-family: 'Exo2.0';
+  src: local('Exo2.0 Thin'),
+  local('Exo2.0-Thin'),
+  url('./app/assets/fonts/Exo2.0-Thin.woff2') format('woff2'),
+  url('./app/assets/fonts/Exo2.0-Thin.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Microsoft Sans Serif", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 20px;
+}
+
+main {
+  display: block;
+  height: 100%;
+}

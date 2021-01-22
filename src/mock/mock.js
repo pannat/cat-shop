@@ -9,13 +9,12 @@ const tastes = ['c фуа-гра', 'c рыбой', 'c курой']
 const getFoodItem = () => ({
   id: 0,
   title: 'Нямушка',
-  taste: tastes[randomInt(0, tastes.length)],
-  count: randomInt(10, 100),
+  taste: tastes[randomInt(0, tastes.length - 1)],
+  count: randomInt(1, 10) * 10,
   gift: {
-    name: 'mouse',
     count: randomInt(1, 5)
   },
-  weight: randomInt(500, 1001)
+  weight: randomInt(1, 10) * 100
 })
 
 export const getFoodList = new Promise((resolve) => {

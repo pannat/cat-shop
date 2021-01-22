@@ -11,7 +11,6 @@ export default class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>CAT SHOP</h1>
       </header>
     )
   }
